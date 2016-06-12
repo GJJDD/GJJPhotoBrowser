@@ -85,9 +85,7 @@ static NSString * const reuseFooterIdentifier = @"cardFooterID";
 - (NSArray *)itemHeightWithCollectionView:(UICollectionView *)collectionView
                 collectionViewLayout:(GJJInLayout *)collectionViewLayout {
     /*
-     *每个cell高度最小为整个屏幕正好显示下,即collectionView的长度
-     *会有个布局计算,返回每个cell的高度,数组添加后返回
-     *这边模拟下
+     模拟高度
      */
     NSMutableArray *heightArray = [[NSMutableArray alloc]init];
     for (NSInteger i = 0; i < self.layoutModelsArray.count; i++) {

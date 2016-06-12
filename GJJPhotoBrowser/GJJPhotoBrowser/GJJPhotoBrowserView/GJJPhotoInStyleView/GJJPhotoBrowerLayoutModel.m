@@ -19,11 +19,11 @@
 
 #define kImageWH(nums) (KContentWidth-kLeftSpace-kContentSpace*(nums-1)-kRightSpace)/nums
 
-#define kContentSpace (self.contentInset?:0)
-#define kTopSpace (self.topInset?:0)
-#define kLeftSpace (self.leftInset?:0)
-#define kBottonSpace (self.bottomInset?:0)
-#define kRightSpace (self.rightInset?:0)
+#define kContentSpace (_contentInset?:0)
+#define kTopSpace (_topInset?:0)
+#define kLeftSpace (_leftInset?:0)
+#define kBottonSpace (_bottomInset?:0)
+#define kRightSpace (_rightInset?:0)
 
 @interface GJJPhotoBrowerLayoutModel ()
 @property (nonatomic, assign) NSInteger imageNums; // 图片数量
@@ -34,14 +34,14 @@
 - (instancetype)initWithPhotoUrlsArray:(NSArray *)photoUrlsArray ContentWidth:(CGFloat)contentWidth andEdgeInsets:(UIEdgeInsets)edgeInsets andContentInset:(CGFloat)contentInset andOrigin:(CGPoint)origin
 {
     if (self = [super init]) {
-        self.origin = origin;
-        self.photoUrlsArray = photoUrlsArray;
-        self.contentWidth = contentWidth;
-        self.contentInset = contentInset;
-        self.topInset = edgeInsets.top;
-        self.leftInset = edgeInsets.left;
-        self.bottomInset = edgeInsets.bottom;
-        self.rightInset = edgeInsets.right;
+        _origin = origin;
+        _photoUrlsArray = photoUrlsArray;
+        _contentWidth = contentWidth;
+        _contentInset = contentInset;
+        _topInset = edgeInsets.top;
+        _leftInset = edgeInsets.left;
+        _bottomInset = edgeInsets.bottom;
+        _rightInset = edgeInsets.right;
         self.imageNums = photoUrlsArray.count;
     }
     
