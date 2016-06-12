@@ -3,7 +3,7 @@
 <p>效果图：</p>
 <img src="http://7s1sju.com1.z0.glb.clouddn.com/%E4%BB%BFin%E5%9B%BE%E7%89%87%E6%B5%8F%E8%A7%88%E5%99%A8.gif"  height="240" width="360"/>
 </br>
-<img src="http://7s1sju.com1.z0.glb.clouddn.com/Snip20160612_4.png"  height="240" width="360"/>
+<img src="http://7s1sju.com1.z0.glb.clouddn.com/Snip20160612_4.png"  height="720" width="594"/>
 </br>
 <ul>
 <li>1:将GJJPhotoBrowserView文件夹拖入到你的项目工程</li>
