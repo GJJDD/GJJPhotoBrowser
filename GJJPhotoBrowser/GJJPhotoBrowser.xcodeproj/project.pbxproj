@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		182A47A01D06DA9300DBB776 /* photoUrls.plist in Resources */ = {isa = PBXBuildFile; fileRef = 182A479F1D06DA9300DBB776 /* photoUrls.plist */; };
+		1857DA011D0677E200073A3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857DA001D0677E200073A3B /* main.m */; };
+		1857DA041D0677E200073A3B /* GJJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857DA031D0677E200073A3B /* GJJAppDelegate.m */; };
+		1857DA0C1D0677E200073A3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1857DA0B1D0677E200073A3B /* Assets.xcassets */; };
+		1857DA0F1D0677E200073A3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1857DA0D1D0677E200073A3B /* LaunchScreen.storyboard */; };
+		1857DA1A1D0677E200073A3B /* GJJPhotoBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857DA191D0677E200073A3B /* GJJPhotoBrowserTests.m */; };
+		1857DA251D0677E200073A3B /* GJJPhotoBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857DA241D0677E200073A3B /* GJJPhotoBrowserUITests.m */; };
+		18BA18331D0D2DDB00FD37A6 /* GJJInCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA18291D0D2DDB00FD37A6 /* GJJInCollectionViewCell.m */; };
+		18BA18341D0D2DDB00FD37A6 /* GJJInLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA182B1D0D2DDB00FD37A6 /* GJJInLayout.m */; };
+		18BA18351D0D2DDB00FD37A6 /* GJJInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA182D1D0D2DDB00FD37A6 /* GJJInViewController.m */; };
+		18BA18361D0D2DDB00FD37A6 /* GJJDomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA18301D0D2DDB00FD37A6 /* GJJDomeTableViewCell.m */; };
+		18BA18371D0D2DDB00FD37A6 /* GJJInPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA18321D0D2DDB00FD37A6 /* GJJInPhotoBrowserViewController.m */; };
+		18BA18591D0D2DE100FD37A6 /* GJJPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA183C1D0D2DE100FD37A6 /* GJJPhotoBrowser.m */; };
+		18BA185A1D0D2DE100FD37A6 /* GJJPhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA183E1D0D2DE100FD37A6 /* GJJPhotoBrowserCell.m */; };
+		18BA185B1D0D2DE100FD37A6 /* GJJToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA18401D0D2DE100FD37A6 /* GJJToast.m */; };
+		18BA185C1D0D2DE100FD37A6 /* INBrowseDownload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18BA18411D0D2DE100FD37A6 /* INBrowseDownload@2x.png */; };
+		18BA185D1D0D2DE100FD37A6 /* INBrowseDownload@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18BA18421D0D2DE100FD37A6 /* INBrowseDownload@3x.png */; };
+		18BA185E1D0D2DE100FD37A6 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 18BA18431D0D2DE100FD37A6 /* placeholder.png */; };
+		18BA185F1D0D2DE100FD37A6 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA18451D0D2DE100FD37A6 /* UIView+frame.m */; };
+		18BA18601D0D2DE100FD37A6 /* GJJPhotoBrowerLayoutModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA18481D0D2DE100FD37A6 /* GJJPhotoBrowerLayoutModel.m */; };
+		18BA18611D0D2DE100FD37A6 /* GJJPhotoBrowserCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA184A1D0D2DE100FD37A6 /* GJJPhotoBrowserCollectionView.m */; };
+		18BA18621D0D2DE100FD37A6 /* GJJPhotoBrowserLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA184C1D0D2DE100FD37A6 /* GJJPhotoBrowserLayout.m */; };
+		18BA18631D0D2DE100FD37A6 /* GJJPhotoImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA184E1D0D2DE100FD37A6 /* GJJPhotoImageCollectionViewCell.m */; };
+		18BA18641D0D2DE100FD37A6 /* GJJWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA18521D0D2DE100FD37A6 /* GJJWebImageDownloader.m */; };
+		18BA18651D0D2DE100FD37A6 /* GJJWebImageDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA18541D0D2DE100FD37A6 /* GJJWebImageDownloadOperation.m */; };
+		18BA18661D0D2DE100FD37A6 /* UIImage+GJJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA18561D0D2DE100FD37A6 /* UIImage+GJJExtension.m */; };
+		18BA18671D0D2DE100FD37A6 /* UIImageView+GJJWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA18581D0D2DE100FD37A6 /* UIImageView+GJJWebImage.m */; };
+		18BA186A1D0D2E2A00FD37A6 /* GJJRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA18691D0D2E2A00FD37A6 /* GJJRootViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1857DA161D0677E200073A3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1857D9F41D0677E200073A3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1857D9FB1D0677E200073A3B;
+			remoteInfo = GJJPhotoBrowser;
+		};
+		1857DA211D0677E200073A3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1857D9F41D0677E200073A3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1857D9FB1D0677E200073A3B;
+			remoteInfo = GJJPhotoBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		182A479F1D06DA9300DBB776 /* photoUrls.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = photoUrls.plist; sourceTree = "<group>"; };
+		1857D9FC1D0677E200073A3B /* GJJPhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GJJPhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1857DA001D0677E200073A3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1857DA021D0677E200073A3B /* GJJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJJAppDelegate.h; sourceTree = "<group>"; };
+		1857DA031D0677E200073A3B /* GJJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJJAppDelegate.m; sourceTree = "<group>"; };
+		1857DA0B1D0677E200073A3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1857DA0E1D0677E200073A3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1857DA101D0677E200073A3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1857DA151D0677E200073A3B /* GJJPhotoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GJJPhotoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1857DA191D0677E200073A3B /* GJJPhotoBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJJPhotoBrowserTests.m; sourceTree = "<group>"; };
+		1857DA1B1D0677E200073A3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1857DA201D0677E200073A3B /* GJJPhotoBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GJJPhotoBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1857DA241D0677E200073A3B /* GJJPhotoBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJJPhotoBrowserUITests.m; sourceTree = "<group>"; };
+		1857DA261D0677E200073A3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BA18281D0D2DDB00FD37A6 /* GJJInCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJInCollectionViewCell.h; sourceTree = "<group>"; };
+		18BA18291D0D2DDB00FD37A6 /* GJJInCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJInCollectionViewCell.m; sourceTree = "<group>"; };
+		18BA182A1D0D2DDB00FD37A6 /* GJJInLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJInLayout.h; sourceTree = "<group>"; };
+		18BA182B1D0D2DDB00FD37A6 /* GJJInLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJInLayout.m; sourceTree = "<group>"; };
+		18BA182C1D0D2DDB00FD37A6 /* GJJInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJInViewController.h; sourceTree = "<group>"; };
+		18BA182D1D0D2DDB00FD37A6 /* GJJInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJInViewController.m; sourceTree = "<group>"; };
+		18BA182F1D0D2DDB00FD37A6 /* GJJDomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJDomeTableViewCell.h; sourceTree = "<group>"; };
+		18BA18301D0D2DDB00FD37A6 /* GJJDomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJDomeTableViewCell.m; sourceTree = "<group>"; };
+		18BA18311D0D2DDB00FD37A6 /* GJJInPhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJInPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		18BA18321D0D2DDB00FD37A6 /* GJJInPhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJInPhotoBrowserViewController.m; sourceTree = "<group>"; };
+		18BA183A1D0D2DE100FD37A6 /* gjj_const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gjj_const.h; sourceTree = "<group>"; };
+		18BA183B1D0D2DE100FD37A6 /* GJJPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJPhotoBrowser.h; sourceTree = "<group>"; };
+		18BA183C1D0D2DE100FD37A6 /* GJJPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJPhotoBrowser.m; sourceTree = "<group>"; };
+		18BA183D1D0D2DE100FD37A6 /* GJJPhotoBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJPhotoBrowserCell.h; sourceTree = "<group>"; };
+		18BA183E1D0D2DE100FD37A6 /* GJJPhotoBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJPhotoBrowserCell.m; sourceTree = "<group>"; };
+		18BA183F1D0D2DE100FD37A6 /* GJJToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJToast.h; sourceTree = "<group>"; };
+		18BA18401D0D2DE100FD37A6 /* GJJToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJToast.m; sourceTree = "<group>"; };
+		18BA18411D0D2DE100FD37A6 /* INBrowseDownload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "INBrowseDownload@2x.png"; sourceTree = "<group>"; };
+		18BA18421D0D2DE100FD37A6 /* INBrowseDownload@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "INBrowseDownload@3x.png"; sourceTree = "<group>"; };
+		18BA18431D0D2DE100FD37A6 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		18BA18441D0D2DE100FD37A6 /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		18BA18451D0D2DE100FD37A6 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		18BA18471D0D2DE100FD37A6 /* GJJPhotoBrowerLayoutModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJPhotoBrowerLayoutModel.h; sourceTree = "<group>"; };
+		18BA18481D0D2DE100FD37A6 /* GJJPhotoBrowerLayoutModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJPhotoBrowerLayoutModel.m; sourceTree = "<group>"; };
+		18BA18491D0D2DE100FD37A6 /* GJJPhotoBrowserCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJPhotoBrowserCollectionView.h; sourceTree = "<group>"; };
+		18BA184A1D0D2DE100FD37A6 /* GJJPhotoBrowserCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJPhotoBrowserCollectionView.m; sourceTree = "<group>"; };
+		18BA184B1D0D2DE100FD37A6 /* GJJPhotoBrowserLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJPhotoBrowserLayout.h; sourceTree = "<group>"; };
+		18BA184C1D0D2DE100FD37A6 /* GJJPhotoBrowserLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJPhotoBrowserLayout.m; sourceTree = "<group>"; };
+		18BA184D1D0D2DE100FD37A6 /* GJJPhotoImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJPhotoImageCollectionViewCell.h; sourceTree = "<group>"; };
+		18BA184E1D0D2DE100FD37A6 /* GJJPhotoImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJPhotoImageCollectionViewCell.m; sourceTree = "<group>"; };
+		18BA18501D0D2DE100FD37A6 /* GJJWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJWebImage.h; sourceTree = "<group>"; };
+		18BA18511D0D2DE100FD37A6 /* GJJWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJWebImageDownloader.h; sourceTree = "<group>"; };
+		18BA18521D0D2DE100FD37A6 /* GJJWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJWebImageDownloader.m; sourceTree = "<group>"; };
+		18BA18531D0D2DE100FD37A6 /* GJJWebImageDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJWebImageDownloadOperation.h; sourceTree = "<group>"; };
+		18BA18541D0D2DE100FD37A6 /* GJJWebImageDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJWebImageDownloadOperation.m; sourceTree = "<group>"; };
+		18BA18551D0D2DE100FD37A6 /* UIImage+GJJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GJJExtension.h"; sourceTree = "<group>"; };
+		18BA18561D0D2DE100FD37A6 /* UIImage+GJJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GJJExtension.m"; sourceTree = "<group>"; };
+		18BA18571D0D2DE100FD37A6 /* UIImageView+GJJWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GJJWebImage.h"; sourceTree = "<group>"; };
+		18BA18581D0D2DE100FD37A6 /* UIImageView+GJJWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GJJWebImage.m"; sourceTree = "<group>"; };
+		18BA18681D0D2E2A00FD37A6 /* GJJRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJRootViewController.h; sourceTree = "<group>"; };
+		18BA18691D0D2E2A00FD37A6 /* GJJRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJRootViewController.m; sourceTree = "<group>"; };
+		1D5B32EFBAC87441E005C2B1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		62768600FD5BCF9979137906 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		669C65A2D83254EAD1A8E90F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1857D9F91D0677E200073A3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1857DA121D0677E200073A3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1857DA1D1D0677E200073A3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1857D9F31D0677E200073A3B = {
+			isa = PBXGroup;
+			children = (
+				1857D9FE1D0677E200073A3B /* GJJPhotoBrowser */,
+				1857DA181D0677E200073A3B /* GJJPhotoBrowserTests */,
+				1857DA231D0677E200073A3B /* GJJPhotoBrowserUITests */,
+				1857D9FD1D0677E200073A3B /* Products */,
+				41AA119D8466D439AA1691E1 /* Pods */,
+				64E02923DDDC38045D58090F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1857D9FD1D0677E200073A3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1857D9FC1D0677E200073A3B /* GJJPhotoBrowser.app */,
+				1857DA151D0677E200073A3B /* GJJPhotoBrowserTests.xctest */,
+				1857DA201D0677E200073A3B /* GJJPhotoBrowserUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1857D9FE1D0677E200073A3B /* GJJPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				18BA18381D0D2DE100FD37A6 /* GJJPhotoBrowserView */,
+				18BA18261D0D2DDB00FD37A6 /* Dome */,
+				1857DA021D0677E200073A3B /* GJJAppDelegate.h */,
+				1857DA031D0677E200073A3B /* GJJAppDelegate.m */,
+				18BA18681D0D2E2A00FD37A6 /* GJJRootViewController.h */,
+				18BA18691D0D2E2A00FD37A6 /* GJJRootViewController.m */,
+				182A479F1D06DA9300DBB776 /* photoUrls.plist */,
+				1857DA0B1D0677E200073A3B /* Assets.xcassets */,
+				1857DA0D1D0677E200073A3B /* LaunchScreen.storyboard */,
+				1857DA101D0677E200073A3B /* Info.plist */,
+				1857D9FF1D0677E200073A3B /* Supporting Files */,
+			);
+			path = GJJPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		1857D9FF1D0677E200073A3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1857DA001D0677E200073A3B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1857DA181D0677E200073A3B /* GJJPhotoBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				1857DA191D0677E200073A3B /* GJJPhotoBrowserTests.m */,
+				1857DA1B1D0677E200073A3B /* Info.plist */,
+			);
+			path = GJJPhotoBrowserTests;
+			sourceTree = "<group>";
+		};
+		1857DA231D0677E200073A3B /* GJJPhotoBrowserUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1857DA241D0677E200073A3B /* GJJPhotoBrowserUITests.m */,
+				1857DA261D0677E200073A3B /* Info.plist */,
+			);
+			path = GJJPhotoBrowserUITests;
+			sourceTree = "<group>";
+		};
+		18BA18261D0D2DDB00FD37A6 /* Dome */ = {
+			isa = PBXGroup;
+			children = (
+				18BA18271D0D2DDB00FD37A6 /* GJJInCollectionView */,
+				18BA182E1D0D2DDB00FD37A6 /* GJJTableView */,
+			);
+			path = Dome;
+			sourceTree = "<group>";
+		};
+		18BA18271D0D2DDB00FD37A6 /* GJJInCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				18BA18281D0D2DDB00FD37A6 /* GJJInCollectionViewCell.h */,
+				18BA18291D0D2DDB00FD37A6 /* GJJInCollectionViewCell.m */,
+				18BA182A1D0D2DDB00FD37A6 /* GJJInLayout.h */,
+				18BA182B1D0D2DDB00FD37A6 /* GJJInLayout.m */,
+				18BA182C1D0D2DDB00FD37A6 /* GJJInViewController.h */,
+				18BA182D1D0D2DDB00FD37A6 /* GJJInViewController.m */,
+			);
+			path = GJJInCollectionView;
+			sourceTree = "<group>";
+		};
+		18BA182E1D0D2DDB00FD37A6 /* GJJTableView */ = {
+			isa = PBXGroup;
+			children = (
+				18BA182F1D0D2DDB00FD37A6 /* GJJDomeTableViewCell.h */,
+				18BA18301D0D2DDB00FD37A6 /* GJJDomeTableViewCell.m */,
+				18BA18311D0D2DDB00FD37A6 /* GJJInPhotoBrowserViewController.h */,
+				18BA18321D0D2DDB00FD37A6 /* GJJInPhotoBrowserViewController.m */,
+			);
+			path = GJJTableView;
+			sourceTree = "<group>";
+		};
+		18BA18381D0D2DE100FD37A6 /* GJJPhotoBrowserView */ = {
+			isa = PBXGroup;
+			children = (
+				18BA18391D0D2DE100FD37A6 /* GJJPhotoBrowser */,
+				18BA18461D0D2DE100FD37A6 /* GJJPhotoInStyleView */,
+				18BA184F1D0D2DE100FD37A6 /* GJJWebImageDownloader */,
+			);
+			path = GJJPhotoBrowserView;
+			sourceTree = "<group>";
+		};
+		18BA18391D0D2DE100FD37A6 /* GJJPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				18BA183A1D0D2DE100FD37A6 /* gjj_const.h */,
+				18BA183B1D0D2DE100FD37A6 /* GJJPhotoBrowser.h */,
+				18BA183C1D0D2DE100FD37A6 /* GJJPhotoBrowser.m */,
+				18BA183D1D0D2DE100FD37A6 /* GJJPhotoBrowserCell.h */,
+				18BA183E1D0D2DE100FD37A6 /* GJJPhotoBrowserCell.m */,
+				18BA183F1D0D2DE100FD37A6 /* GJJToast.h */,
+				18BA18401D0D2DE100FD37A6 /* GJJToast.m */,
+				18BA18411D0D2DE100FD37A6 /* INBrowseDownload@2x.png */,
+				18BA18421D0D2DE100FD37A6 /* INBrowseDownload@3x.png */,
+				18BA18431D0D2DE100FD37A6 /* placeholder.png */,
+				18BA18441D0D2DE100FD37A6 /* UIView+frame.h */,
+				18BA18451D0D2DE100FD37A6 /* UIView+frame.m */,
+			);
+			path = GJJPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		18BA18461D0D2DE100FD37A6 /* GJJPhotoInStyleView */ = {
+			isa = PBXGroup;
+			children = (
+				18BA18471D0D2DE100FD37A6 /* GJJPhotoBrowerLayoutModel.h */,
+				18BA18481D0D2DE100FD37A6 /* GJJPhotoBrowerLayoutModel.m */,
+				18BA18491D0D2DE100FD37A6 /* GJJPhotoBrowserCollectionView.h */,
+				18BA184A1D0D2DE100FD37A6 /* GJJPhotoBrowserCollectionView.m */,
+				18BA184B1D0D2DE100FD37A6 /* GJJPhotoBrowserLayout.h */,
+				18BA184C1D0D2DE100FD37A6 /* GJJPhotoBrowserLayout.m */,
+				18BA184D1D0D2DE100FD37A6 /* GJJPhotoImageCollectionViewCell.h */,
+				18BA184E1D0D2DE100FD37A6 /* GJJPhotoImageCollectionViewCell.m */,
+			);
+			path = GJJPhotoInStyleView;
+			sourceTree = "<group>";
+		};
+		18BA184F1D0D2DE100FD37A6 /* GJJWebImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				18BA18501D0D2DE100FD37A6 /* GJJWebImage.h */,
+				18BA18511D0D2DE100FD37A6 /* GJJWebImageDownloader.h */,
+				18BA18521D0D2DE100FD37A6 /* GJJWebImageDownloader.m */,
+				18BA18531D0D2DE100FD37A6 /* GJJWebImageDownloadOperation.h */,
+				18BA18541D0D2DE100FD37A6 /* GJJWebImageDownloadOperation.m */,
+				18BA18551D0D2DE100FD37A6 /* UIImage+GJJExtension.h */,
+				18BA18561D0D2DE100FD37A6 /* UIImage+GJJExtension.m */,
+				18BA18571D0D2DE100FD37A6 /* UIImageView+GJJWebImage.h */,
+				18BA18581D0D2DE100FD37A6 /* UIImageView+GJJWebImage.m */,
+			);
+			path = GJJWebImageDownloader;
+			sourceTree = "<group>";
+		};
+		41AA119D8466D439AA1691E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D5B32EFBAC87441E005C2B1 /* Pods.debug.xcconfig */,
+				669C65A2D83254EAD1A8E90F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		64E02923DDDC38045D58090F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62768600FD5BCF9979137906 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1857D9FB1D0677E200073A3B /* GJJPhotoBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1857DA291D0677E200073A3B /* Build configuration list for PBXNativeTarget "GJJPhotoBrowser" */;
+			buildPhases = (
+				1857D9F81D0677E200073A3B /* Sources */,
+				1857D9F91D0677E200073A3B /* Frameworks */,
+				1857D9FA1D0677E200073A3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GJJPhotoBrowser;
+			productName = GJJPhotoBrowser;
+			productReference = 1857D9FC1D0677E200073A3B /* GJJPhotoBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1857DA141D0677E200073A3B /* GJJPhotoBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1857DA2C1D0677E200073A3B /* Build configuration list for PBXNativeTarget "GJJPhotoBrowserTests" */;
+			buildPhases = (
+				1857DA111D0677E200073A3B /* Sources */,
+				1857DA121D0677E200073A3B /* Frameworks */,
+				1857DA131D0677E200073A3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1857DA171D0677E200073A3B /* PBXTargetDependency */,
+			);
+			name = GJJPhotoBrowserTests;
+			productName = GJJPhotoBrowserTests;
+			productReference = 1857DA151D0677E200073A3B /* GJJPhotoBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1857DA1F1D0677E200073A3B /* GJJPhotoBrowserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1857DA2F1D0677E200073A3B /* Build configuration list for PBXNativeTarget "GJJPhotoBrowserUITests" */;
+			buildPhases = (
+				1857DA1C1D0677E200073A3B /* Sources */,
+				1857DA1D1D0677E200073A3B /* Frameworks */,
+				1857DA1E1D0677E200073A3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1857DA221D0677E200073A3B /* PBXTargetDependency */,
+			);
+			name = GJJPhotoBrowserUITests;
+			productName = GJJPhotoBrowserUITests;
+			productReference = 1857DA201D0677E200073A3B /* GJJPhotoBrowserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1857D9F41D0677E200073A3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GJJ;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "QiaTu HangZhou";
+				TargetAttributes = {
+					1857D9FB1D0677E200073A3B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					1857DA141D0677E200073A3B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1857D9FB1D0677E200073A3B;
+					};
+					1857DA1F1D0677E200073A3B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1857D9FB1D0677E200073A3B;
+					};
+				};
+			};
+			buildConfigurationList = 1857D9F71D0677E200073A3B /* Build configuration list for PBXProject "GJJPhotoBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1857D9F31D0677E200073A3B;
+			productRefGroup = 1857D9FD1D0677E200073A3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1857D9FB1D0677E200073A3B /* GJJPhotoBrowser */,
+				1857DA141D0677E200073A3B /* GJJPhotoBrowserTests */,
+				1857DA1F1D0677E200073A3B /* GJJPhotoBrowserUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1857D9FA1D0677E200073A3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1857DA0F1D0677E200073A3B /* LaunchScreen.storyboard in Resources */,
+				18BA185E1D0D2DE100FD37A6 /* placeholder.png in Resources */,
+				18BA185C1D0D2DE100FD37A6 /* INBrowseDownload@2x.png in Resources */,
+				18BA185D1D0D2DE100FD37A6 /* INBrowseDownload@3x.png in Resources */,
+				182A47A01D06DA9300DBB776 /* photoUrls.plist in Resources */,
+				1857DA0C1D0677E200073A3B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1857DA131D0677E200073A3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1857DA1E1D0677E200073A3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1857D9F81D0677E200073A3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BA18361D0D2DDB00FD37A6 /* GJJDomeTableViewCell.m in Sources */,
+				18BA18621D0D2DE100FD37A6 /* GJJPhotoBrowserLayout.m in Sources */,
+				18BA18331D0D2DDB00FD37A6 /* GJJInCollectionViewCell.m in Sources */,
+				18BA18631D0D2DE100FD37A6 /* GJJPhotoImageCollectionViewCell.m in Sources */,
+				18BA18371D0D2DDB00FD37A6 /* GJJInPhotoBrowserViewController.m in Sources */,
+				1857DA041D0677E200073A3B /* GJJAppDelegate.m in Sources */,
+				18BA185A1D0D2DE100FD37A6 /* GJJPhotoBrowserCell.m in Sources */,
+				18BA185B1D0D2DE100FD37A6 /* GJJToast.m in Sources */,
+				18BA18351D0D2DDB00FD37A6 /* GJJInViewController.m in Sources */,
+				18BA18611D0D2DE100FD37A6 /* GJJPhotoBrowserCollectionView.m in Sources */,
+				18BA18601D0D2DE100FD37A6 /* GJJPhotoBrowerLayoutModel.m in Sources */,
+				18BA18661D0D2DE100FD37A6 /* UIImage+GJJExtension.m in Sources */,
+				18BA185F1D0D2DE100FD37A6 /* UIView+frame.m in Sources */,
+				18BA18671D0D2DE100FD37A6 /* UIImageView+GJJWebImage.m in Sources */,
+				18BA186A1D0D2E2A00FD37A6 /* GJJRootViewController.m in Sources */,
+				18BA18591D0D2DE100FD37A6 /* GJJPhotoBrowser.m in Sources */,
+				18BA18651D0D2DE100FD37A6 /* GJJWebImageDownloadOperation.m in Sources */,
+				18BA18641D0D2DE100FD37A6 /* GJJWebImageDownloader.m in Sources */,
+				18BA18341D0D2DDB00FD37A6 /* GJJInLayout.m in Sources */,
+				1857DA011D0677E200073A3B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1857DA111D0677E200073A3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1857DA1A1D0677E200073A3B /* GJJPhotoBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1857DA1C1D0677E200073A3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1857DA251D0677E200073A3B /* GJJPhotoBrowserUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1857DA171D0677E200073A3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1857D9FB1D0677E200073A3B /* GJJPhotoBrowser */;
+			targetProxy = 1857DA161D0677E200073A3B /* PBXContainerItemProxy */;
+		};
+		1857DA221D0677E200073A3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1857D9FB1D0677E200073A3B /* GJJPhotoBrowser */;
+			targetProxy = 1857DA211D0677E200073A3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1857DA0D1D0677E200073A3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1857DA0E1D0677E200073A3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1857DA271D0677E200073A3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1857DA281D0677E200073A3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1857DA2A1D0677E200073A3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D5B32EFBAC87441E005C2B1 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GJJPhotoBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiatu.GJJPhotoBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1857DA2B1D0677E200073A3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 669C65A2D83254EAD1A8E90F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GJJPhotoBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiatu.GJJPhotoBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1857DA2D1D0677E200073A3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GJJPhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiatu.GJJPhotoBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GJJPhotoBrowser.app/GJJPhotoBrowser";
+			};
+			name = Debug;
+		};
+		1857DA2E1D0677E200073A3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GJJPhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiatu.GJJPhotoBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GJJPhotoBrowser.app/GJJPhotoBrowser";
+			};
+			name = Release;
+		};
+		1857DA301D0677E200073A3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GJJPhotoBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiatu.GJJPhotoBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GJJPhotoBrowser;
+			};
+			name = Debug;
+		};
+		1857DA311D0677E200073A3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GJJPhotoBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiatu.GJJPhotoBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GJJPhotoBrowser;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1857D9F71D0677E200073A3B /* Build configuration list for PBXProject "GJJPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1857DA271D0677E200073A3B /* Debug */,
+				1857DA281D0677E200073A3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1857DA291D0677E200073A3B /* Build configuration list for PBXNativeTarget "GJJPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1857DA2A1D0677E200073A3B /* Debug */,
+				1857DA2B1D0677E200073A3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1857DA2C1D0677E200073A3B /* Build configuration list for PBXNativeTarget "GJJPhotoBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1857DA2D1D0677E200073A3B /* Debug */,
+				1857DA2E1D0677E200073A3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1857DA2F1D0677E200073A3B /* Build configuration list for PBXNativeTarget "GJJPhotoBrowserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1857DA301D0677E200073A3B /* Debug */,
+				1857DA311D0677E200073A3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1857D9F41D0677E200073A3B /* Project object */;
+}
