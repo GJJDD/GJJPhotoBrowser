@@ -45,11 +45,11 @@ static NSString * const reuseFooterIdentifier = @"cardFooterID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.layoutModelsArray = [NSMutableArray array];
-    UIEdgeInsets edgeInsets = UIEdgeInsetsMake(5, 5, 5, 5);
+    UIEdgeInsets edgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
     CGFloat contentInset = 5;
-    CGFloat contentWidth = [UIScreen mainScreen].bounds.size.width;
+    CGFloat contentWidth = [UIScreen mainScreen].bounds.size.width-20;
     for (int i = 0; i < self.photoUrlsArray.count; i++) {
-        GJJPhotoBrowerLayoutModel *layoutModel = [[GJJPhotoBrowerLayoutModel alloc] initWithPhotoUrlsArray:self.photoUrlsArray[i] ContentWidth:contentWidth andEdgeInsets:edgeInsets andContentInset:contentInset andOrigin:CGPointMake((SCREEN_WIDTH-contentWidth)/2, 0)];
+        GJJPhotoBrowerLayoutModel *layoutModel = [[GJJPhotoBrowerLayoutModel alloc] initWithPhotoUrlsArray:self.photoUrlsArray[i] ContentWidth:contentWidth andEdgeInsets:edgeInsets andContentInset:contentInset andOrigin:CGPointMake(0, 0)];
         [self.layoutModelsArray addObject:layoutModel];
     }
 

@@ -13,6 +13,7 @@
 
 @interface GJJInCollectionViewCell ()
 @property (nonatomic, weak) GJJPhotoBrowserCollectionView *collectionView;
+@property (nonatomic, weak) UIView *circleView;
 @end
 
 @implementation GJJInCollectionViewCell
@@ -20,8 +21,17 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
+     
+        UIView *circleView = [[UIView alloc] init];
+        [self.contentView addSubview:circleView];
+        [circleView setBackgroundColor:[UIColor whiteColor]];
+        self.circleView = circleView;
+        circleView.layer.masksToBounds = YES;
+        circleView.layer.cornerRadius = 10;
+        
+        
         GJJPhotoBrowserCollectionView *collectionView = [[GJJPhotoBrowserCollectionView alloc] init];
-        [self.contentView addSubview:collectionView];
+        [circleView addSubview:collectionView];
         self.collectionView = collectionView;
     }
     
@@ -33,6 +43,7 @@
 {
     _layoutModel = layoutModel;
     [self.collectionView setLayoutModel:layoutModel];
+    [self.circleView setFrame:CGRectMake(10, 10, layoutModel.contentWidth, layoutModel.contentHeight+150)];
 }
 
 
