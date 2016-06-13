@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImageView (GJJWebImage)
-
 - (void)gjj_setImageWithURL:(NSURL *)url;
+- (void)gjj_setImageWithContentModeURL:(NSURL *)url;
 - (void)gjj_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder;
 - (void)gjj_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder completed:(void(^)(UIImage *image, NSError *error, NSURL *imageUrl))completed;
 
