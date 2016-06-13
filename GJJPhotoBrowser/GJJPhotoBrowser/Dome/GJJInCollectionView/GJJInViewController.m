@@ -86,7 +86,7 @@ static NSString * const reuseFooterIdentifier = @"cardFooterID";
         
         GJJPhotoBrowerLayoutModel *layoutModel = self.layoutModelsArray[i];
         
-        CGFloat height = ([layoutModel contentHeight]+[UIScreen mainScreen].bounds.size.height);
+        CGFloat height = ([layoutModel contentHeight]+[UIScreen mainScreen].bounds.size.height-[layoutModel contentHeight]);
         [heightArray addObject:[NSNumber numberWithFloat:height]];
     }
     return heightArray;
