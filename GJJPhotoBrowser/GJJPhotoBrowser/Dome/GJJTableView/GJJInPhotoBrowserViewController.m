@@ -82,7 +82,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     GJJPhotoBrowerLayoutModel *layoutModel = self.layoutModelsArray[indexPath.row];
-    return [layoutModel contentHeight];
+    return [layoutModel contentHeight]+100;
 }
 
 

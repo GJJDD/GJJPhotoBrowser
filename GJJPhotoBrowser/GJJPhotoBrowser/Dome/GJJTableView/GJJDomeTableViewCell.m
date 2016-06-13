@@ -10,10 +10,11 @@
 #import "GJJPhotoBrowserCollectionView.h"
 #import "GJJDomeTableViewCell.h"
 #import "GJJPhotoBrowerLayoutModel.h"
-
+#define kRandomColor [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1]
 
 @interface GJJDomeTableViewCell ()
 @property (nonatomic, weak) GJJPhotoBrowserCollectionView *collectionView;
+@property (nonatomic, weak) UILabel *descLabel;
 @end
 
 @implementation GJJDomeTableViewCell
@@ -26,6 +27,13 @@
         GJJPhotoBrowserCollectionView *collectionView = [[GJJPhotoBrowserCollectionView alloc] init];
         [self.contentView addSubview:collectionView];
         self.collectionView = collectionView;
+        // 描述信息
+        UILabel *descLabel = [[UILabel alloc] init];
+        [self.contentView addSubview:descLabel];
+        [descLabel setTextColor:kRandomColor];
+        [descLabel setTextAlignment:(NSTextAlignmentCenter)];
+        self.descLabel = descLabel;
+        
     }
     return self;
 }
@@ -34,6 +42,9 @@
 {
     _layoutModel = layoutModel;
     [self.collectionView setLayoutModel:layoutModel];
+    [self.descLabel setFrame:CGRectMake(0, layoutModel.contentHeight, [UIScreen mainScreen].bounds.size.width, 30)];
+    [self.descLabel setText:@"这是一段描述信息"];
+    
 }
 
 
