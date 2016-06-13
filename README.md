@@ -1,9 +1,7 @@
 仿in首页图片浏览器
 </br>
 <p>效果图：</p>
-<video width="320" height="240" controls>
-  <source src="http://7s1sju.com1.z0.glb.clouddn.com/%E4%BB%BFin%E5%9B%BE%E7%89%87%E6%B5%8F%E8%A7%88%E5%99%A8.mp4" type="video/mp4">
-</video>
+<img src="http://7s1sju.com1.z0.glb.clouddn.com/%E4%BB%BFin%E5%9B%BE%E7%89%87%E6%B5%8F%E8%A7%88%E5%99%A81.gif"  height="360" width="240"/>
 </br>
 <img src="http://7s1sju.com1.z0.glb.clouddn.com/Snip20160612_4.png"  height="720" width="594"/>
 </br>
