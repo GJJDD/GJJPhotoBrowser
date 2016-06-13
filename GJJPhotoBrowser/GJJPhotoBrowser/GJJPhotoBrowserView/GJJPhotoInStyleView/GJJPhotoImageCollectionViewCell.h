@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface GJJPhotoImageCollectionViewCell : UICollectionViewCell
-@property (nonatomic, weak) UIImageView *photoImageView;
+
+
+@property (nonatomic, copy) NSString *photoUrl;
+@property (nonatomic, weak, readonly) UIImageView *photoImageView;
 @end

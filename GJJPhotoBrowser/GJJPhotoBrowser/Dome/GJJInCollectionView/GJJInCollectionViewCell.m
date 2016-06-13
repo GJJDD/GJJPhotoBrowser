@@ -12,42 +12,32 @@
 
 
 @interface GJJInCollectionViewCell ()
-@property (nonatomic, strong) GJJPhotoBrowserCollectionView *collectionView;
+@property (nonatomic, weak) GJJPhotoBrowserCollectionView *collectionView;
 @end
 
 @implementation GJJInCollectionViewCell
 
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:frame]) {
+        GJJPhotoBrowserCollectionView *collectionView = [[GJJPhotoBrowserCollectionView alloc] init];
+        [self.contentView addSubview:collectionView];
+        self.collectionView = collectionView;
+    }
+    
+    return self;
+}
+
+
 - (void)setLayoutModel:(GJJPhotoBrowerLayoutModel *)layoutModel
 {
-    [self loadViewsWithPhotoBrowerLayoutModel:layoutModel];
+    _layoutModel = layoutModel;
+    [self.collectionView setLayoutModel:layoutModel];
 }
 
 
 
-- (void)loadViewsWithPhotoBrowerLayoutModel:(GJJPhotoBrowerLayoutModel *)layoutModel
-{
-    [self.collectionView removeFromSuperview];
-    self.collectionView = nil;
-    self.collectionView = [[GJJPhotoBrowserCollectionView alloc] initWithPhotoBrowerLayoutModel:layoutModel];
-    [self.collectionView setUserInteractionEnabled:YES];
-    
-    [self.contentView addSubview:self.collectionView];
-}
 
-//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-//{
-//    [super touchesBegan:touches withEvent:event];
-//    
-//    UITouch *touch = [touches anyObject];
-//    if([self.collectionView pointInside:[touch locationInView:self] withEvent:nil]) {
-//     
-//        CGPoint originLocation = [touch locationInView:self];
-//        NSLog(@"%f----%f", originLocation.x, originLocation.y);
-//    }
-//           NSLog(@"xx:%f----yy:%f", [touch locationInView:self].x, [touch locationInView:self].y);
-//    
-//
-//}
 
 
 @end

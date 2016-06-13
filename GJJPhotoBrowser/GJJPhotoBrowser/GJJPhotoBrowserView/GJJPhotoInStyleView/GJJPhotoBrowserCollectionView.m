@@ -16,23 +16,45 @@
 static NSString *const photoBrowsercellID = @"cellID";
 @interface GJJPhotoBrowserCollectionView ()<UICollectionViewDelegate, UICollectionViewDataSource, GJJPhotoBrowserLayoutDelegate>
 @property (weak, nonatomic) UICollectionView *collectionView;
+@property (weak, nonatomic) GJJPhotoBrowserLayout *layout;
 
-@property (nonatomic, strong) GJJPhotoBrowerLayoutModel *layoutModel;
 @end
 
 
 @implementation GJJPhotoBrowserCollectionView
 
-- (instancetype)initWithPhotoBrowerLayoutModel:(GJJPhotoBrowerLayoutModel *)layoutModel
+
+- (instancetype)init
 {
     if (self = [super init]) {
-        self.layoutModel = layoutModel;
-
-     [self setupViews];
+        [self setupViews];
     }
-    
     return self;
 }
+- (void)setupViews
+{
+    GJJPhotoBrowserLayout *layout = [[GJJPhotoBrowserLayout alloc] init];
+    self.layout = layout;
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:layout];
+    [collectionView setBackgroundColor:kRandomColor];
+    [self addSubview:collectionView];
+    self.collectionView = collectionView;
+    [collectionView registerClass:[GJJPhotoImageCollectionViewCell class] forCellWithReuseIdentifier:photoBrowsercellID];
+}
+
+- (void)setLayoutModel:(GJJPhotoBrowerLayoutModel *)layoutModel
+{
+    _layoutModel = layoutModel;
+    [self.layout setPhotoBrowserLayoutDelegate:self];
+    [self.collectionView setDelegate:self];
+    [self.collectionView setDataSource:self];
+    self.frame = CGRectMake(layoutModel.origin.x, layoutModel.origin.y, layoutModel.contentWidth, layoutModel.contentHeight);
+    
+    [self.collectionView reloadData];
+    [self.collectionView setFrame:CGRectMake(0, 0, layoutModel.contentWidth, layoutModel.contentHeight)];
+}
+
+
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
 {
     return YES;
@@ -47,21 +69,6 @@ static NSString *const photoBrowsercellID = @"cellID";
 }
 
 
-- (void)setupViews
-{
-    GJJPhotoBrowserLayout *layout = [[GJJPhotoBrowserLayout alloc] init];
-    layout.photoBrowserLayoutDelegate = self;
-    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0,0, self.layoutModel.contentWidth, self.layoutModel.contentHeight) collectionViewLayout:layout];
-    [collectionView setBackgroundColor:kRandomColor];
-    [self addSubview:collectionView];
-    collectionView.delegate = self;
-    collectionView.dataSource = self;
-    self.collectionView = collectionView;
-    [collectionView registerClass:[GJJPhotoImageCollectionViewCell class] forCellWithReuseIdentifier:photoBrowsercellID];
-    //
-    [collectionView setFrame:CGRectMake(self.layoutModel.origin.x, self.layoutModel.origin.y, self.layoutModel.contentWidth, self.layoutModel.contentHeight)];
-}
-
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -72,8 +79,8 @@ static NSString *const photoBrowsercellID = @"cellID";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     GJJPhotoImageCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:photoBrowsercellID forIndexPath:indexPath];
+    cell.photoUrl =self.layoutModel.photoUrlsArray[indexPath.row];
 
-    [cell.photoImageView gjj_setImageWithURL:[NSURL URLWithString:self.layoutModel.photoUrlsArray[indexPath.row]]];
     return cell;
 }
 

@@ -13,7 +13,7 @@
 
 
 @interface GJJDomeTableViewCell ()
-@property (nonatomic, strong) GJJPhotoBrowserCollectionView *collectionView;
+@property (nonatomic, weak) GJJPhotoBrowserCollectionView *collectionView;
 @end
 
 @implementation GJJDomeTableViewCell
@@ -23,25 +23,20 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-      
+        GJJPhotoBrowserCollectionView *collectionView = [[GJJPhotoBrowserCollectionView alloc] init];
+        [self.contentView addSubview:collectionView];
+        self.collectionView = collectionView;
     }
     return self;
 }
 
 - (void)setLayoutModel:(GJJPhotoBrowerLayoutModel *)layoutModel
 {
-    [self loadViewsWithPhotoBrowerLayoutModel:layoutModel];
+    _layoutModel = layoutModel;
+    [self.collectionView setLayoutModel:layoutModel];
 }
 
 
 
-- (void)loadViewsWithPhotoBrowerLayoutModel:(GJJPhotoBrowerLayoutModel *)layoutModel
-{
-    [self.collectionView removeFromSuperview];
-    self.collectionView = nil;
-    self.collectionView = [[GJJPhotoBrowserCollectionView alloc] initWithPhotoBrowerLayoutModel:layoutModel];
-    
-    [self.contentView addSubview:self.collectionView];
-}
 
 @end

@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 @class GJJPhotoBrowerLayoutModel;
 @interface GJJPhotoBrowserCollectionView : UIView
-
-- (instancetype)initWithPhotoBrowerLayoutModel:(GJJPhotoBrowerLayoutModel *)layoutModel;
-
+@property (nonatomic, strong) GJJPhotoBrowerLayoutModel *layoutModel;
 
 @end
