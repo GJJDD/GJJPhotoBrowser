@@ -53,7 +53,7 @@ static NSString * const reuseFooterIdentifier = @"cardFooterID";
         [self.layoutModelsArray addObject:layoutModel];
     }
 
-    self.title = @"仿In动态显示动画";
+    self.title = @"UICollectionView示例";
     [self setAutomaticallyAdjustsScrollViewInsets:NO];
     
     GJJInLayout *inLayout = [GJJInLayout new];

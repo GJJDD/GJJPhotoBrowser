@@ -44,7 +44,8 @@
     CGFloat contentInset = 5;
     CGFloat contentWidth = 300;
     for (int i = 0; i < self.photoUrlsArray.count; i++) {
-        GJJPhotoBrowerLayoutModel *layoutModel = [[GJJPhotoBrowerLayoutModel alloc] initWithPhotoUrlsArray:self.photoUrlsArray[i] ContentWidth:contentWidth andEdgeInsets:edgeInsets andContentInset:contentInset andOrigin:CGPointMake(([UIScreen mainScreen].bounds.size.width-contentWidth)/2, 0)];
+//        GJJPhotoBrowerLayoutModel *layoutModel = [[GJJPhotoBrowerLayoutModel alloc] initWithPhotoUrlsArray:self.photoUrlsArray[i] ContentWidth:contentWidth andEdgeInsets:edgeInsets andContentInset:contentInset andOrigin:CGPointMake(([UIScreen mainScreen].bounds.size.width-contentWidth)/2, 0)];
+        GJJPhotoBrowerLayoutModel *layoutModel = [[GJJPhotoBrowerLayoutModel alloc] initWithPhotoUrlsArray:self.photoUrlsArray[i] andOrigin:CGPointMake(0, 0)];
         [self.layoutModelsArray addObject:layoutModel];
     }
     

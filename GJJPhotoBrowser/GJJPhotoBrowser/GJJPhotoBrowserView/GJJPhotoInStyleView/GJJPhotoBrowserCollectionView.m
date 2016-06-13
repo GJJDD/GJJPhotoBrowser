@@ -36,7 +36,7 @@ static NSString *const photoBrowsercellID = @"cellID";
     GJJPhotoBrowserLayout *layout = [[GJJPhotoBrowserLayout alloc] init];
     self.layout = layout;
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:layout];
-    [collectionView setBackgroundColor:kRandomColor];
+    [collectionView setBackgroundColor:[UIColor whiteColor]];
     [self addSubview:collectionView];
     self.collectionView = collectionView;
     [collectionView registerClass:[GJJPhotoImageCollectionViewCell class] forCellWithReuseIdentifier:photoBrowsercellID];

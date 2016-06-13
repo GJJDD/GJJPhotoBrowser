@@ -7,7 +7,8 @@
 //
 
 #import "GJJPhotoBrowerLayoutModel.h"
-#define KContentWidth (self.contentWidth?:[UIScreen mainScreen].bounds.size.width)
+#define kDefaultInset 5
+#define KContentWidth (_contentWidth?:[UIScreen mainScreen].bounds.size.width)
 // 1张大图的高度
 #define kBigImageHeight kImageWH(3)*2+kContentSpace
 // 2张小图的宽高
@@ -31,6 +32,25 @@
 
 
 @implementation GJJPhotoBrowerLayoutModel
+
+- (instancetype)initWithPhotoUrlsArray:(NSArray *)photoUrlsArray andOrigin:(CGPoint)origin {
+    if (self = [super init]) {
+        _origin = origin;
+        _photoUrlsArray = photoUrlsArray;
+        _contentWidth = KContentWidth;
+        _contentInset = kDefaultInset;
+        _topInset = kDefaultInset;
+        _leftInset = kDefaultInset;
+        _bottomInset = kDefaultInset;
+        _rightInset = kDefaultInset;
+        self.imageNums = photoUrlsArray.count;
+    }
+    
+    return self;
+}
+
+
+
 - (instancetype)initWithPhotoUrlsArray:(NSArray *)photoUrlsArray ContentWidth:(CGFloat)contentWidth andEdgeInsets:(UIEdgeInsets)edgeInsets andContentInset:(CGFloat)contentInset andOrigin:(CGPoint)origin
 {
     if (self = [super init]) {
