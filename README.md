@@ -16,7 +16,7 @@ GitHub：[GJJDD](https://github.com/GJJDD) | code4app：[只有一点点](http:/
 * [Examples 【示例】](#Examples)
 	* [在UITableView中的使用](#UITableView)
 	* [在UICollectionView中的使用](#UICollectionView)
-* [Analysis 【示例】](#Analysis)
+* [Analysis 【分析】](#Analysis)
 
 
 ---
