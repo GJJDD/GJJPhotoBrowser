@@ -18,7 +18,7 @@ GitHub：[GJJDD](https://github.com/GJJDD) | code4app：[只有一点点](http:/
 	* [在UICollectionView中的使用](#UICollectionView)
 	 
 	
-* [Analysis 【分析】](#Analysis)
+* [Analysed 【分析】](#Analysed)
 ---
 
 # <a id="Getting_Started"></a> Getting Started【开始使用】
@@ -49,7 +49,7 @@ GitHub：[GJJDD](https://github.com/GJJDD) | code4app：[只有一点点](http:/
 ## <a id="UICollectionView"></a> UICollectionView【在UICollectionView中的使用】
 <img src="http://7s1sju.com1.z0.glb.clouddn.com/collection.gif" />
 
-# <a id="Analysis"></a> Analysis【分析】
+# <a id="Analysed"></a> Analysis【分析】
 <img src="http://7s1sju.com1.z0.glb.clouddn.com/Snip20160612_4.png"/>
 
 ## 期待
