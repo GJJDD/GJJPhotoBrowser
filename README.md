@@ -8,7 +8,7 @@
 <ul>
 <li>1:将GJJPhotoBrowserView文件夹拖入到你的项目工程</li>
 <li>2:导入#import "GJJPhotoBrowserCollectionView.h"</li>
-<li>3:创建GJJPhotoBrowerLayoutModel模型设置属性</li>
-<li>4:将GJJPhotoBrowerLayoutModel加入到GJJPhotoBrowserCollectionView *collectionView = [[GJJPhotoBrowserCollectionView alloc] initWithPhotoBrowerLayoutModel:layoutModel]; </li>
-<li>5:将collectionView添加到需要的view中</li>
+<li>3:创建GJJPhotoBrowserCollectionView *collectionView = [[GJJPhotoBrowserCollectionView alloc] init];</li>
+<li>4:将collectionView添加到需要的view中</li>
+<li>5:创建GJJPhotoBrowerLayoutModel模型设置属性</li>
 </ul>
