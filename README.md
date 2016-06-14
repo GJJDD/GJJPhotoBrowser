@@ -25,6 +25,7 @@ GitHub：[GJJDD](https://github.com/GJJDD) | code4app：[只有一点点](http:/
 - GJJPhotoBrowser是一个快速创建类似inapp图片浏览器效果的轻量级框架
 
 ## <a id="Installation"></a> Installation【安装】
+
 ### Manually【手动导入】
 - Drag all source files under floder `GJJPhotoBrowserView` to your project.【将`GJJPhotoBrowserView`文件夹中的所有源代码拽入项目中】
 - Import the main header file：`#import "GJJPhotoBrowsers.h"`【导入主头文件：`#import "GJJPhotoBrowsers.h"`】
