@@ -31,10 +31,10 @@ GitHub：[GJJDD](https://github.com/GJJDD) | code4app：[只有一点点](http:/
 - Import the main header file：`#import "GJJPhotoBrowsers.h"`【导入主头文件：`#import "GJJPhotoBrowsers.h"`】
 
 ## <a id="Use"></a> Use【使用方式】
- -1:导入#import "GJJPhotoBrowsers.h"
- -2:创建GJJPhotoBrowserCollectionView *collectionView = [[GJJPhotoBrowserCollectionView alloc] init];
- -3:将collectionView添加到需要的view中
- -4:创建GJJPhotoBrowerLayoutModel模型并设置属性
+ ### 1:导入#import "GJJPhotoBrowsers.h"
+ ### 2:创建GJJPhotoBrowserCollectionView *collectionView = [[GJJPhotoBrowserCollectionView alloc] init];
+ ### 3:将collectionView添加到需要的view中
+ ### 4:创建GJJPhotoBrowerLayoutModel模型并设置属性
 
 # <a id="Examples"></a> Examples【示例】
 ## <a id="UITableView"></a> UITableView【在UITableView中的使用】
