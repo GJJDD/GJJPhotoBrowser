@@ -31,6 +31,7 @@ GitHub：[GJJDD](https://github.com/GJJDD) | code4app：[只有一点点](http:/
 - Import the main header file：`#import "GJJPhotoBrowsers.h"`【导入主头文件：`#import "GJJPhotoBrowsers.h"`】
 
 ## <a id="Analysis"></a> Analysis【分析】
+<img src="http://7s1sju.com1.z0.glb.clouddn.com/Snip20160612_4.png"  height="720" width="594"/>
 
 # <a id="Examples"></a> Examples【示例】
 ## <a id="UITableView"></a> UITableView【在UITableView中的使用】
