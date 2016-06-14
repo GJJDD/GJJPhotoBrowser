@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class GJJPhotoBrowerLayoutModel;
+
 @interface GJJInCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic, strong) GJJPhotoBrowerLayoutModel *layoutModel;

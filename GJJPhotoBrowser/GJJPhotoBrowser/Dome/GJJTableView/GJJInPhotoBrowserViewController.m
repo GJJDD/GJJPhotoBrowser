@@ -7,10 +7,8 @@
 //
 
 #import "GJJInPhotoBrowserViewController.h"
-#import "GJJPhotoBrowserCollectionView.h"
 #import "GJJDomeTableViewCell.h"
-#import "GJJPhotoBrowserLayout.h"
-#import "GJJPhotoBrowerLayoutModel.h"
+
 
 
 @interface GJJInPhotoBrowserViewController ()<UITableViewDataSource, UITableViewDelegate>

@@ -110,6 +110,8 @@
 		18BA18581D0D2DE100FD37A6 /* UIImageView+GJJWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GJJWebImage.m"; sourceTree = "<group>"; };
 		18BA18681D0D2E2A00FD37A6 /* GJJRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJRootViewController.h; sourceTree = "<group>"; };
 		18BA18691D0D2E2A00FD37A6 /* GJJRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJRootViewController.m; sourceTree = "<group>"; };
+		18E38AC41D0FBF9B00280E91 /* GJJPhotoBrowsers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJJPhotoBrowsers.h; sourceTree = "<group>"; };
+		18E38AC51D0FC13500280E91 /* GJJPhotoBrowser_pch.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJPhotoBrowser_pch.pch; sourceTree = "<group>"; };
 		1D5B32EFBAC87441E005C2B1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		62768600FD5BCF9979137906 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		669C65A2D83254EAD1A8E90F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				1857DA0D1D0677E200073A3B /* LaunchScreen.storyboard */,
 				1857DA101D0677E200073A3B /* Info.plist */,
 				1857D9FF1D0677E200073A3B /* Supporting Files */,
+				18E38AC51D0FC13500280E91 /* GJJPhotoBrowser_pch.pch */,
 			);
 			path = GJJPhotoBrowser;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				18BA184C1D0D2DE100FD37A6 /* GJJPhotoBrowserLayout.m */,
 				18BA184D1D0D2DE100FD37A6 /* GJJPhotoImageCollectionViewCell.h */,
 				18BA184E1D0D2DE100FD37A6 /* GJJPhotoImageCollectionViewCell.m */,
+				18E38AC41D0FBF9B00280E91 /* GJJPhotoBrowsers.h */,
 			);
 			path = GJJPhotoInStyleView;
 			sourceTree = "<group>";
@@ -543,6 +547,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/GJJPhotoBrowser_pch.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -585,6 +590,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/GJJPhotoBrowser_pch.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -603,6 +609,7 @@
 			baseConfigurationReference = 1D5B32EFBAC87441E005C2B1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = GJJPhotoBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qiatu.GJJPhotoBrowser;
@@ -615,6 +622,7 @@
 			baseConfigurationReference = 669C65A2D83254EAD1A8E90F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = GJJPhotoBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qiatu.GJJPhotoBrowser;

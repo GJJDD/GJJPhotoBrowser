@@ -7,8 +7,6 @@
 //
 
 #import "GJJInCollectionViewCell.h"
-#import "GJJPhotoBrowserCollectionView.h"
-#import "GJJPhotoBrowerLayoutModel.h"
 
 
 @interface GJJInCollectionViewCell ()

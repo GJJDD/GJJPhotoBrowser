@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class GJJPhotoBrowerLayoutModel;
+
 @interface GJJDomeTableViewCell : UITableViewCell
 
 
