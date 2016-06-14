@@ -14,7 +14,8 @@ GitHub：[GJJDD](https://github.com/GJJDD) | code4app：[只有一点点](http:/
 	* [Installation 【安装】](#Installation)
 	* [Analysis 【分析】](#Analysis)
 * [Examples 【示例】](#Examples)
-	* [JSON -> Model](#JSON_Model)
+	* [在UITableView中的使用](#UITableView)
+	* [在UICollectionView中的使用](#UICollectionView)
 
 ---
 
@@ -27,12 +28,13 @@ GitHub：[GJJDD](https://github.com/GJJDD) | code4app：[只有一点点](http:/
 ### Manually【手动导入】
 - Drag all source files under floder `GJJPhotoBrowserView` to your project.【将`GJJPhotoBrowserView`文件夹中的所有源代码拽入项目中】
 - Import the main header file：`#import "GJJPhotoBrowsers.h"`【导入主头文件：`#import "GJJPhotoBrowsers.h"`】
-# <a id="Analysis"></a> Analysis【分析】
+## <a id="Analysis"></a> Analysis【分析】
 
 # <a id="Examples"></a> Examples【示例】
-
+## <a id="UITableView"></a> UITableView【在UITableView中的使用】
+## <a id="UICollectionView"></a> UICollectionView【在UICollectionView中的使用】
 ## 期待
 * 如果在使用过程中遇到BUG，希望你能Issues我，谢谢（或者尝试下载最新的框架代码看看BUG修复没有）
 * 如果在使用过程中发现功能不够用，希望你能Issues我，我非常想为这个框架增加更多好用的功能，谢谢
-* 如果你想为MJExtension输出代码，请拼命Pull Requests我
+* 如果你想为GJJPhotoBrowser输出代码，请拼命Pull Requests我
 
