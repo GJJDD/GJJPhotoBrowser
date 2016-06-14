@@ -28,6 +28,7 @@ GitHub：[GJJDD](https://github.com/GJJDD) | code4app：[只有一点点](http:/
 ### Manually【手动导入】
 - Drag all source files under floder `GJJPhotoBrowserView` to your project.【将`GJJPhotoBrowserView`文件夹中的所有源代码拽入项目中】
 - Import the main header file：`#import "GJJPhotoBrowsers.h"`【导入主头文件：`#import "GJJPhotoBrowsers.h"`】
+
 ## <a id="Analysis"></a> Analysis【分析】
 
 # <a id="Examples"></a> Examples【示例】
