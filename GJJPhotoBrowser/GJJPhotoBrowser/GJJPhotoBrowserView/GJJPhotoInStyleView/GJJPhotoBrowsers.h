@@ -10,3 +10,5 @@
 #import "GJJPhotoBrowserCollectionView.h"
 #import "GJJPhotoBrowerLayoutModel.h"
 #import "GJJPhotoBrowserLayout.h"
+
+#define kRandomColor [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1]

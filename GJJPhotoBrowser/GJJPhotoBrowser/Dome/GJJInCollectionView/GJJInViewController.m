@@ -10,11 +10,6 @@
 #import "GJJInLayout.h"
 #import "GJJInCollectionViewCell.h"
 
-#define kRandomColor [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1]
-
-
-#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
-#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 static NSString * const reuseCellIdentifier = @"cardCellID";
 static NSString * const reuseHeaderIdentifier = @"cardHeaderID";
 static NSString * const reuseFooterIdentifier = @"cardFooterID";

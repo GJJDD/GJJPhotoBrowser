@@ -12,7 +12,6 @@
 #import "GJJPhotoBrowser.h"
 #import "GJJWebImage.h"
 #import "GJJPhotoBrowerLayoutModel.h"
-#define kRandomColor [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1]
 static NSString *const photoBrowsercellID = @"cellID";
 @interface GJJPhotoBrowserCollectionView ()<UICollectionViewDelegate, UICollectionViewDataSource, GJJPhotoBrowserLayoutDelegate>
 @property (weak, nonatomic) UICollectionView *collectionView;

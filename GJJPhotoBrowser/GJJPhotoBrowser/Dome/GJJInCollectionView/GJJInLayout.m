@@ -8,8 +8,7 @@
 
 #import "GJJInLayout.h"
 static CGFloat Animation_Scale = 0.5;
-#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
-#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
 @interface GJJInLayout()
 @property (nonatomic) NSInteger numberOfSections;
 @property (nonatomic) NSInteger numberOfCellsInSection;
