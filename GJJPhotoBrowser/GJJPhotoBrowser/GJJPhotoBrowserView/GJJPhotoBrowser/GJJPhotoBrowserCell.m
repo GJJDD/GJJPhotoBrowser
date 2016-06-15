@@ -9,7 +9,7 @@
 #import "GJJPhotoBrowserCell.h"
 #import "gjj_const.h"
 #import "UIImageView+GJJWebImage.h"
-
+#import "GJJWebImageDownloader.h"
 @interface GJJPhotoBrowserCell () <UIScrollViewDelegate>
 
 @property (nonatomic, strong) UIScrollView *scrollView;
@@ -114,14 +114,14 @@
 //- (void)configureCellWithURLStrings:(NSString *)URLStrings {
 //   // self.imageView.image = self.placeholderImage;
 //    NSURL *url = [NSURL URLWithString:URLStrings];
-////    [[HUWebImageDownloader sharedInstance] downloadImageWithURL:url completed:^(UIImage *image, NSError *error, NSURL *imageUrl) {
-////        self.imageView.image = image;
-////    }];
-//    [self.imageView hu_setImageWithURL:url placeholderImage:self.placeholderImage completed:^(UIImage *image, NSError *error, NSURL *imageUrl) {
-//        if (image) {
-//            [[NSNotificationCenter defaultCenter] postNotificationName:kPhotoCellDidImageLoadedNotification object:nil];
-//        }
+//    [[GJJWebImageDownloader sharedInstance] downloadImageWithURL:url completed:^(UIImage *image, NSError *error, NSURL *imageUrl) {
+//        self.imageView.image = image;
 //    }];
+////    [self.imageView gjj_setImageWithURL:url placeholderImage:self.placeholderImage completed:^(UIImage *image, NSError *error, NSURL *imageUrl) {
+////        if (image) {
+////            [[NSNotificationCenter defaultCenter] postNotificationName:kPhotoCellDidImageLoadedNotification object:nil];
+////        }
+////    }];
 //}
 
 #pragma mark - getter

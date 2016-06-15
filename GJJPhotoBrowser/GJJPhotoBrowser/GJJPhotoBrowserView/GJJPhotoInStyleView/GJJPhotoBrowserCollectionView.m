@@ -88,7 +88,36 @@ static NSString *const photoBrowsercellID = @"cellID";
 {
     GJJPhotoImageCollectionViewCell *cell = (GJJPhotoImageCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
     
-    [GJJPhotoBrowser showFromImageView:cell.photoImageView withURLStrings:self.layoutModel.photoUrlsArray placeholderImage:[UIImage imageNamed:@"placeholder"] atIndex:indexPath.row dismiss:nil];
+  [GJJPhotoBrowser showFromImageView:cell.photoImageView withURLStrings:self.layoutModel.photoUrlsArray placeholderImage:[UIImage imageNamed:@"placeholder"] atIndex:indexPath.row dismiss:^(UIImage *image, NSInteger index, CGRect frame , GJJPhotoBrowser *photoBrowser) {
+        
+        
+        GJJPhotoImageCollectionViewCell *cell = (GJJPhotoImageCollectionViewCell *)[collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]];
+        
+        
+        
+        CGRect endFrame = [cell convertRect:cell.photoImageView.frame toView:[UIApplication sharedApplication].keyWindow];
+        
+        UIImageView *tempImageView = [[UIImageView alloc] initWithFrame:frame];
+        tempImageView.image = cell.photoImageView.image;
+        tempImageView.contentMode = UIViewContentModeScaleAspectFit;
+        photoBrowser.collectionView.hidden = YES;
+        
+        [[UIApplication sharedApplication].keyWindow addSubview:tempImageView];
+        
+        
+        [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            tempImageView.frame = endFrame;
+            photoBrowser.alpha = 0;
+        } completion:^(BOOL finished) {
+            
+            [photoBrowser removeFromSuperview];
+            [tempImageView removeFromSuperview];
+            
+        }];
+        
+        
+
+    }];
     
 }
 

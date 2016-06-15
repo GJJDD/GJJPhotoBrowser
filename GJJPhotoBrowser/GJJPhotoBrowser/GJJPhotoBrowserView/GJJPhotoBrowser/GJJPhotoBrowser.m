@@ -22,7 +22,7 @@
 
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UIImageView *tmpImageView;
-@property (nonatomic, strong) UICollectionView *collectionView;
+
 @property (nonatomic, strong) UIView *toolBar;
 @property (nonatomic, weak) UILabel *countLab;
 @property (nonatomic, strong) NSArray *URLStrings;
@@ -291,19 +291,31 @@
 - (void)dismiss {
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     
-    if (self.dismissDlock) {
-        GJJPhotoBrowserCell *cell = (GJJPhotoBrowserCell *)[self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:_currentPage inSection:0]];
-        self.dismissDlock(cell.imageView.image, _currentPage);
-    }
+
     
     if (_currentPage != _index) {
-        [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-            self.alpha = 0;
-        } completion:^(BOOL finished) {
+        
+        if (self.dismissDlock) {
+            GJJPhotoBrowserCell *cell = (GJJPhotoBrowserCell *)[self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:_currentPage inSection:0]];
             
-            [self removeFromSuperview];
-        }];
+            CGRect endFrame = [cell convertRect:cell.imageView.frame toView:[UIApplication sharedApplication].keyWindow];
+            self.dismissDlock(cell.imageView.image, _currentPage, endFrame, self);
+            
+        } else {
+        
+            [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+                self.alpha = 0;
+            } completion:^(BOOL finished) {
+                
+                [self removeFromSuperview];
+                
+                
+                
+            }];
+        }
         return;
+        
+     
     }
     
     CGRect endFrame = [self.imageView.superview convertRect:self.imageView.frame toView:[UIApplication sharedApplication].keyWindow];

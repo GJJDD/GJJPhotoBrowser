@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-typedef void(^DismissBlock)(UIImage*image, NSInteger index);
+@class GJJPhotoBrowser;
+typedef void(^DismissBlock)(UIImage*image, NSInteger index, CGRect frame, GJJPhotoBrowser *photoBrowser);
 
 @interface GJJPhotoBrowser : UIView
 
@@ -46,5 +46,5 @@ typedef void(^DismissBlock)(UIImage*image, NSInteger index);
 + (instancetype)showFromImageView:(UIImageView *)imageView withImages:(NSArray *)images placeholderImage:(UIImage *)image atIndex:(NSInteger)index dismiss:(DismissBlock)block;
 
 @property (nonatomic, strong) UIImage *placeholderImage;
-
+@property (nonatomic, strong) UICollectionView *collectionView;
 @end
