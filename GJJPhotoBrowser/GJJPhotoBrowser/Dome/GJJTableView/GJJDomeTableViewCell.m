@@ -41,7 +41,7 @@
 {
     _layoutModel = layoutModel;
     [self.collectionView setLayoutModel:layoutModel];
-    [self.descLabel setFrame:CGRectMake(0, layoutModel.contentHeight, [UIScreen mainScreen].bounds.size.width, 30)];
+    [self.descLabel setFrame:CGRectMake(0, layoutModel.contentHeight, SCREEN_WIDTH, 30)];
     [self.descLabel setText:@"这是一段描述信息"];
     
 }

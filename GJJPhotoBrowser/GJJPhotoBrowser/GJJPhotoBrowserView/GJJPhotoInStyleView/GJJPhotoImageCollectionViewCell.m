@@ -20,7 +20,7 @@
 {
     if (self = [super initWithFrame:frame]) {
         [self loadViews];
-        [self.contentView setBackgroundColor:kRandomColor];
+//        [self.contentView setBackgroundColor:kRandomColor];
     }
     return self;
 }
