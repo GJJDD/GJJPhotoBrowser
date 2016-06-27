@@ -40,7 +40,7 @@
         self.index = 0;
     }
     
-    [imageView gjj_setImageWithURL:[NSURL URLWithString:self.photoUrlsArray[self.index]]];
+    [imageView gjj_setImageWithContentModeURL:[NSURL URLWithString:self.photoUrlsArray[self.index]]];
     
         CATransition *animation = [CATransition animation];
         //动画时间
@@ -69,6 +69,8 @@
 
     UIImageView *photoImageView = [[UIImageView alloc] initWithFrame:self.bounds];
     [self addSubview:photoImageView];
+    photoImageView.layer.masksToBounds = YES;
+    
     self.photoImageView = photoImageView;
     [photoImageView setUserInteractionEnabled:YES];
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapClick:)];
@@ -113,5 +115,8 @@
     [self performSelector:@selector(changeImages:)withObject:self.photoImageView afterDelay:0.0];
     
 }
+
+
+
 
 @end
