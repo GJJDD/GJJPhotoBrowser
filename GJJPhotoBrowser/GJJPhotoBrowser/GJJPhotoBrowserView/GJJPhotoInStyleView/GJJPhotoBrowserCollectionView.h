@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @class GJJPhotoBrowerLayoutModel;
 @interface GJJPhotoBrowserCollectionView : UIView
+
 @property (nonatomic, strong) GJJPhotoBrowerLayoutModel *layoutModel;
 
 @end

@@ -52,7 +52,7 @@ static NSString * const reuseCellIdentifier = @"RootCellID";
 -(NSArray *)cellTitleArray
 {
     if (!_cellTitleArray) {
-        _cellTitleArray = @[@"UICollectionView示例",@"UITableView示例"];
+        _cellTitleArray = @[@"UICollectionView示例",@"UITableView示例", @"UITableView图片轮播示例"];
     }
     return _cellTitleArray;
 }
@@ -60,7 +60,7 @@ static NSString * const reuseCellIdentifier = @"RootCellID";
 -(NSArray *)classNameArray
 {
     if (!_classNameArray) {
-        _classNameArray = @[@"GJJInViewController",@"GJJInPhotoBrowserViewController"];
+        _classNameArray = @[@"GJJInViewController",@"GJJInPhotoBrowserViewController", @"GJJInAnimatedTableViewController"];
     }
     return _classNameArray;
 }

@@ -35,6 +35,9 @@
 		18BA18661D0D2DE100FD37A6 /* UIImage+GJJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA18561D0D2DE100FD37A6 /* UIImage+GJJExtension.m */; };
 		18BA18671D0D2DE100FD37A6 /* UIImageView+GJJWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA18581D0D2DE100FD37A6 /* UIImageView+GJJWebImage.m */; };
 		18BA186A1D0D2E2A00FD37A6 /* GJJRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA18691D0D2E2A00FD37A6 /* GJJRootViewController.m */; };
+		18DB80CA1D20C67E00C3368E /* GJJPhotoAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DB80C91D20C67E00C3368E /* GJJPhotoAnimatedView.m */; };
+		18DB80CE1D20CCF000C3368E /* GJJInAnimatedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DB80CD1D20CCF000C3368E /* GJJInAnimatedTableViewController.m */; };
+		18DB80D11D20CD0C00C3368E /* GJJInPhotoAnimatedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DB80D01D20CD0C00C3368E /* GJJInPhotoAnimatedTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +113,12 @@
 		18BA18581D0D2DE100FD37A6 /* UIImageView+GJJWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GJJWebImage.m"; sourceTree = "<group>"; };
 		18BA18681D0D2E2A00FD37A6 /* GJJRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJRootViewController.h; sourceTree = "<group>"; };
 		18BA18691D0D2E2A00FD37A6 /* GJJRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJRootViewController.m; sourceTree = "<group>"; };
+		18DB80C81D20C67E00C3368E /* GJJPhotoAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJPhotoAnimatedView.h; sourceTree = "<group>"; };
+		18DB80C91D20C67E00C3368E /* GJJPhotoAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJPhotoAnimatedView.m; sourceTree = "<group>"; };
+		18DB80CC1D20CCF000C3368E /* GJJInAnimatedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJInAnimatedTableViewController.h; sourceTree = "<group>"; };
+		18DB80CD1D20CCF000C3368E /* GJJInAnimatedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJInAnimatedTableViewController.m; sourceTree = "<group>"; };
+		18DB80CF1D20CD0C00C3368E /* GJJInPhotoAnimatedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJInPhotoAnimatedTableViewCell.h; sourceTree = "<group>"; };
+		18DB80D01D20CD0C00C3368E /* GJJInPhotoAnimatedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJInPhotoAnimatedTableViewCell.m; sourceTree = "<group>"; };
 		18E38AC41D0FBF9B00280E91 /* GJJPhotoBrowsers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJJPhotoBrowsers.h; sourceTree = "<group>"; };
 		18E38AC51D0FC13500280E91 /* GJJPhotoBrowser_pch.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJPhotoBrowser_pch.pch; sourceTree = "<group>"; };
 		1D5B32EFBAC87441E005C2B1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -212,6 +221,7 @@
 		18BA18261D0D2DDB00FD37A6 /* Dome */ = {
 			isa = PBXGroup;
 			children = (
+				18DB80CB1D20CC9B00C3368E /* GJJAnimatedTableView */,
 				18BA18271D0D2DDB00FD37A6 /* GJJInCollectionView */,
 				18BA182E1D0D2DDB00FD37A6 /* GJJTableView */,
 			);
@@ -283,6 +293,8 @@
 				18BA184D1D0D2DE100FD37A6 /* GJJPhotoImageCollectionViewCell.h */,
 				18BA184E1D0D2DE100FD37A6 /* GJJPhotoImageCollectionViewCell.m */,
 				18E38AC41D0FBF9B00280E91 /* GJJPhotoBrowsers.h */,
+				18DB80C81D20C67E00C3368E /* GJJPhotoAnimatedView.h */,
+				18DB80C91D20C67E00C3368E /* GJJPhotoAnimatedView.m */,
 			);
 			path = GJJPhotoInStyleView;
 			sourceTree = "<group>";
@@ -301,6 +313,17 @@
 				18BA18581D0D2DE100FD37A6 /* UIImageView+GJJWebImage.m */,
 			);
 			path = GJJWebImageDownloader;
+			sourceTree = "<group>";
+		};
+		18DB80CB1D20CC9B00C3368E /* GJJAnimatedTableView */ = {
+			isa = PBXGroup;
+			children = (
+				18DB80CC1D20CCF000C3368E /* GJJInAnimatedTableViewController.h */,
+				18DB80CD1D20CCF000C3368E /* GJJInAnimatedTableViewController.m */,
+				18DB80CF1D20CD0C00C3368E /* GJJInPhotoAnimatedTableViewCell.h */,
+				18DB80D01D20CD0C00C3368E /* GJJInPhotoAnimatedTableViewCell.m */,
+			);
+			path = GJJAnimatedTableView;
 			sourceTree = "<group>";
 		};
 		41AA119D8466D439AA1691E1 /* Pods */ = {
@@ -457,6 +480,8 @@
 				18BA18361D0D2DDB00FD37A6 /* GJJDomeTableViewCell.m in Sources */,
 				18BA18621D0D2DE100FD37A6 /* GJJPhotoBrowserLayout.m in Sources */,
 				18BA18331D0D2DDB00FD37A6 /* GJJInCollectionViewCell.m in Sources */,
+				18DB80CA1D20C67E00C3368E /* GJJPhotoAnimatedView.m in Sources */,
+				18DB80D11D20CD0C00C3368E /* GJJInPhotoAnimatedTableViewCell.m in Sources */,
 				18BA18631D0D2DE100FD37A6 /* GJJPhotoImageCollectionViewCell.m in Sources */,
 				18BA18371D0D2DDB00FD37A6 /* GJJInPhotoBrowserViewController.m in Sources */,
 				1857DA041D0677E200073A3B /* GJJAppDelegate.m in Sources */,
@@ -474,6 +499,7 @@
 				18BA18641D0D2DE100FD37A6 /* GJJWebImageDownloader.m in Sources */,
 				18BA18341D0D2DDB00FD37A6 /* GJJInLayout.m in Sources */,
 				1857DA011D0677E200073A3B /* main.m in Sources */,
+				18DB80CE1D20CCF000C3368E /* GJJInAnimatedTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

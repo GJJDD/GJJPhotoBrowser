@@ -10,4 +10,4 @@
 #import "GJJPhotoBrowserCollectionView.h"
 #import "GJJPhotoBrowerLayoutModel.h"
 #import "GJJPhotoBrowserLayout.h"
-
+#import "GJJPhotoAnimatedView.h"
