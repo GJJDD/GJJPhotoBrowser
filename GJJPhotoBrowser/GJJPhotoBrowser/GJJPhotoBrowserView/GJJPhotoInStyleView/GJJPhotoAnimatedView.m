@@ -8,6 +8,8 @@
 
 #import "GJJPhotoAnimatedView.h"
 #import "GJJWebImage.h"
+#import "GJJPhotoBrowser.h"
+
 @interface GJJPhotoAnimatedView ()
 
 @property (nonatomic, weak) UIImageView *photoImageView;
@@ -68,6 +70,38 @@
     UIImageView *photoImageView = [[UIImageView alloc] initWithFrame:self.bounds];
     [self addSubview:photoImageView];
     self.photoImageView = photoImageView;
+    [photoImageView setUserInteractionEnabled:YES];
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapClick:)];
+    [photoImageView addGestureRecognizer:tapGestureRecognizer];
+
+}
+
+- (void)tapClick:(UITapGestureRecognizer *)tap
+{
+    [GJJPhotoBrowser showFromImageView:self.photoImageView withURLStrings:self.photoUrlsArray placeholderImage:[UIImage imageNamed:@"placeholder"] atIndex:self.index dismiss:^(UIImage *image, NSInteger index, CGRect frame , GJJPhotoBrowser *photoBrowser) {
+        CGRect endFrame = self.photoImageView.bounds;
+        
+        UIImageView *tempImageView = [[UIImageView alloc] initWithFrame:frame];
+        tempImageView.image = self.photoImageView.image;
+        tempImageView.contentMode = UIViewContentModeScaleAspectFit;
+        photoBrowser.collectionView.hidden = YES;
+        
+        [[UIApplication sharedApplication].keyWindow addSubview:tempImageView];
+        
+        
+        [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            tempImageView.frame = endFrame;
+            photoBrowser.alpha = 0;
+        } completion:^(BOOL finished) {
+            
+            [photoBrowser removeFromSuperview];
+            [tempImageView removeFromSuperview];
+            
+        }];
+        
+        
+        
+    }];
 
 }
 
