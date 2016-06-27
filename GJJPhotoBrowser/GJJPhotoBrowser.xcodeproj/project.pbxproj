@@ -292,9 +292,9 @@
 				18BA184C1D0D2DE100FD37A6 /* GJJPhotoBrowserLayout.m */,
 				18BA184D1D0D2DE100FD37A6 /* GJJPhotoImageCollectionViewCell.h */,
 				18BA184E1D0D2DE100FD37A6 /* GJJPhotoImageCollectionViewCell.m */,
-				18E38AC41D0FBF9B00280E91 /* GJJPhotoBrowsers.h */,
 				18DB80C81D20C67E00C3368E /* GJJPhotoAnimatedView.h */,
 				18DB80C91D20C67E00C3368E /* GJJPhotoAnimatedView.m */,
+				18E38AC41D0FBF9B00280E91 /* GJJPhotoBrowsers.h */,
 			);
 			path = GJJPhotoInStyleView;
 			sourceTree = "<group>";

@@ -33,6 +33,21 @@
     GJJPhotoAnimatedView *photoAnimatedView = [[GJJPhotoAnimatedView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 300)];
     [self.contentView addSubview:photoAnimatedView];
     self.photoAnimatedView = photoAnimatedView;
+    // 设置动画间隔时间
+//    self.photoAnimatedView.animatedTime  = 4;
+    photoAnimatedView.imageAnimatedBlock = ^(UIImageView *imageView){
+        
+        CATransition *animation = [CATransition animation];
+        // 动画时间
+        animation.duration = 2.0f;
+        animation.timingFunction = UIViewAnimationCurveEaseInOut;
+        // 过渡效果
+        animation.type = kCATransitionMoveIn;
+        // 过渡方向
+        animation.subtype = kCATransitionFade;
+        // 添加动画
+        [imageView.layer addAnimation:animation forKey:nil];
+    };
 }
 
 - (void)setPhotoUrlsArray:(NSArray *)photoUrlsArray
